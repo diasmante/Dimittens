@@ -1,0 +1,292 @@
+﻿<!--
+Número: 12
+Nome: Juan Riquelme Silva Azevedo
+Série: INI2CT
+Dia 03/04 Conclusão às 21:31.
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimittens - Conheça o site</title>
+    <style>
+        body {
+            background-color: #333333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        #Form {
+            width: 484px;
+            height: 580px;
+            border-radius: 35px;
+            border: 1px solid #ffffff;
+            background-color: #ffffff;
+            box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+            padding: 35px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #cabecalho {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .preenchecampos {
+            margin: auto;
+            width: 268px;
+            height: 49px;
+            border-radius: 35px;
+            border: 1px solid rgba(121, 121, 121, 0.7);
+            background-color: #ffffff;
+            box-sizing: border-box;
+            margin-bottom: 12px;
+            padding: 10px;
+            position: relative;
+        }
+
+        #dados {
+            position: relative;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        #labelEmail {
+            font-size: 14px;
+            font-family:  "Antialiased ", sans-serif;
+            margin-bottom: 4px;
+            color: #333333;
+            line-height: normal;
+            margin-left: 30px;
+        }
+
+        #labelSenha {
+            font-size: 14px;
+            font-family:  "Antialiased ", sans-serif;
+            margin-bottom: 4px;
+            color: #333333;
+            line-height: normal;
+            margin-left: 30px;
+        }
+
+        .titulo {
+            box-sizing: border-box;
+            font-family: "Antialiased ", sans-serif;
+            font-weight: 600;
+            color: #333333;
+            text-align: center;
+            line-height: normal;
+            font-size: 24px;
+        }
+
+        #p1 {
+            position: relative;
+            font-family: "Antialiased", sans-serif;
+            font-weight: 550;
+            color: #333333ce;
+            text-align: left;
+            line-height: normal;
+            font-size: 12px;
+            margin-left: 30px;
+            margin-top: -5px;
+            right: 6px;
+        }
+
+        #enviar {
+            left: 130px;
+            top: 322px;
+            position: absolute;
+            width: 268px;
+            height: 45px;
+            border-radius: 35px;
+            border: 1px solid #422040;
+            background-color: #422040;
+            box-sizing: border-box;
+            font-family: "Antialiased", sans-serif;
+            font-weight: 600;
+            color: #ffffff;
+            text-align: center;
+            line-height: normal;
+            margin-top: 10px;
+        }
+
+        #cabecalho img {
+            width: 36px;
+            height: 29px;
+            right: 8px;
+            position: relative;
+        }
+
+        #complemento {
+            display: inline;
+            position: relative;
+            top: 27px;
+            right: 6px;
+            font-family: "Antialiased ", sans-serif;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            line-height: normal;
+            font-size: 14px;
+        }
+
+        .optionslog {
+            margin-bottom: 10px;
+            display: block;
+            width: 268px;
+            height: 45px;
+            border-radius: 35px;
+            border: 1px solid rgba(121, 121, 121, 0.7);
+            background-color: #ffffff;
+            box-sizing: border-box;
+            position: relative;
+            top: 25px;
+            align-items: center;
+        }
+
+        #termosdeuso {
+            box-sizing: border-box;
+            font-family: "Antialiased ", sans-serif;
+            font-weight: 500;
+            color: #333333;
+            text-align: center;
+            line-height: normal;
+            font-size: 12px;
+            position: relative;
+            top: 20px;
+        }
+        .opclogins {
+            position: relative;
+            display: flexbox;
+            margin: 0;
+        }
+
+        #email::placeholder {
+            position: relative;
+            left: 6px;
+        }
+
+        #senha::placeholder {
+            position: relative;
+            left: 6px;
+        }
+
+        button#google img {
+            width: 25px;
+            height: 25px;
+            box-sizing: border-box;
+            position: relative;
+            align-items: left;
+            right: 27px;
+            top: 0px;
+        }
+
+        button#face img {
+            width: 25px;
+            height: 25px;
+            box-sizing: border-box;
+            position: relative;
+            align-items: left;
+            right: 20px;
+            top: 0px;
+        }
+
+        #google {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        #face {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px; 
+        }
+
+        .pbuttom {
+            position: relative;
+            right: 6px;
+            font-size: 14px;
+        }
+
+        .linha-horizontal {
+            position: absolute;
+            border: 1px solid #33333352;
+            margin: 10px 0;
+            width: 180px;
+            top: 580px;
+        }
+
+        #verifcadastro {
+            padding-top: 25px;
+            box-sizing: border-box;
+            font-family: "Antialiased", sans-serif;
+            font-weight: 500;
+            color: #333333;
+            text-align: center;
+            line-height: normal;
+            font-size: 12px;
+        }
+
+        a {
+            color: #422040;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        article {
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <article id="Form">
+        <section id="cabecalho">
+            <img src="../imagens/Logo Principal.png" id="logo">
+            <h1 class="titulo">Bem-vindo(a) a Dimittens</h1>
+        </section>
+
+        <section id="dados">
+            <label for="email" id="labelEmail">Email</label>
+            <input type="email" id="email" name="email" class="preenchecampos" placeholder=" Digite seu email">
+            <label for="senha" id="labelSenha">Senha</label>
+            <input type="password" id="senha" name="senha" class="preenchecampos" placeholder="Digite sua Senha">
+            <a href="...">
+                <p id="p1">Esqueceu sua senha?</p>
+            </a>
+        </section>
+        
+        <a href="..."><input type="submit" id="enviar" value="Entrar"></a>
+        <p id="complemento">OU</p>
+        <section class="opclogins">
+            <a href="..."><button type="button" id="face" class="optionslog"><img src="../imagens/facebooklogo.png"><p class="pbuttom">Continuar com o Facebook</p></button></a>
+            <a href="..."><button type="button" id="google" class="optionslog"><img src="../imagens/googlelogo.png"><p class="pbuttom">Continuar com o Google</p></button></a>
+        </section>
+        <p id="termosdeuso">Ao continuar, você concorda com os<br> <strong><a href="...">Termos de Serviço</a></strong> da Dimittens e confirma que<br> leu a nossa <strong><a href="...">Política de Privacidade</a></strong></p>
+        <hr class="linha-horizontal">
+        <p id="verifcadastro">Ainda não está cadastrado? <strong><a href="...">Crie uma conta</a></strong></p>
+    </article>
+</main>
+</body>
+</html>
+
+
+
+
+
+
+
