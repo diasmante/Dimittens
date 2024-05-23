@@ -1,0 +1,269 @@
+body {
+    background-color: rgba(0, 0, 0, 0.575);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flexbox;
+    width: 484px;
+    height: 760px;
+    border-radius: 35px;
+    border: 1px solid #f7f7f7;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.logotipo {
+    margin-top: 40px;
+    text-align: center;
+    padding: 0;
+    height: 70px;
+}
+
+label {
+ align-self: flex-start;
+ font-family: "Antialiased ", sans-serif;
+ margin-bottom: 5px;
+}
+
+#avisodesenha  {
+    font-size: 14px;
+    align-self: flex-start;
+}
+
+.login-conditions {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+hr {
+    width: 150px;
+    height: 1px;
+    border: 1px solid #797979;
+    box-sizing: border-box;
+}
+
+.login-area {
+    display: flex;
+    justify-content: center;
+}
+
+#lb1 {
+    margin-top: 10px;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    font-family: "Antialiased ", sans-serif;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.social-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-fields img {
+    left: 8px;
+    top: 8px;
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+#entrar {
+    width: 268px;
+    height: 45px;
+    border-radius: 35px;
+    border: 1px solid #ec8d26;
+    background-color: #ec8d26;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Antialiased", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    line-height: normal;
+    font-size: 18px;
+}
+
+.input-field {
+    width: 268px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputsbox {
+    width: 268px;
+    height: 49px;
+    border-radius: 17px;
+    border: 1px solid rgba(121, 121, 121, 0.7);
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+}
+
+input {
+    padding-left: 14px;
+    box-sizing: border-box;
+}
+
+.buttoms {
+    width: 268px;
+    height: 45px;
+    border-radius: 35px;
+    border: 1px solid rgba(121, 121, 121, 0.7);
+    background-color: #ffffff;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+
+.pbuttom {
+    position: relative;
+    bottom: 24px;
+    font-family: "Antialiased", sans-serif;
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+    line-height: normal;
+}
+
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    font-family: "Antialiased ", sans-serif;
+    font-weight: 600;
+    color: #333333;
+    margin: 0 0 25px 0;
+}
+
+#logo {
+    width: 80px;    
+    height: 80px;
+    display: flexbox;
+}
+
+footer img {
+    width: 25px;
+    height: 25px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: "Antialiased ", sans-serif;
+}
+
+p {
+    font-family: "Antialiased ", sans-serif;
+    font-size: 12px;
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+    body {
+        position: absolute;
+        overflow: hidden;
+    }
+    .container {
+        width: 100vw;
+        height: 815px;
+        border-radius: 0;
+        margin-top: 150px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: px;
+    }
+
+    .input-field {
+        width: 230px;
+        margin-bottom: 0;
+    }
+
+    span {
+        margin-top: 0;
+        font-size: 12px;
+}
+
+    #logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .logotipo {
+        height: 60px;
+    }
+
+    #entrar {
+        width: 230px;
+        height: 38px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .inputsbox {
+        width: 230px;
+        height: 40px;
+    }
+
+    .buttoms {
+        width: 230px;
+        height: 40px;
+    }
+
+    .pbuttom {
+        font-size: 12px;
+        margin-left: 10px;
+        bottom: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    footer img {
+        width: 20px;
+        height: 20px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    h {
+        margin: 0;
+    }
+
+    #aviso-cadastro {
+        margin: 0;
+    }
+
+    #termos-de-serviço {
+        margin: 8px 0 0 0 ;
+    }
+}
+
+
+
+
+
+
+
+
